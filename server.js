@@ -18,6 +18,10 @@ const leaderboard = [
 ];
 
 app.use(cors());
+app.get('/', (req, res) => {
+  res.send('🚀 Backend is running!');
+});
+
 app.get('/api/user', (req, res) => {
   res.json(user);
 });
